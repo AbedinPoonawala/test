@@ -1,6 +1,7 @@
 ---
 - name: create_directory
   hosts: all
+  gather_facts: False
   tasks:
   - name: Install apache httpd but avoid starting it immediately (state=present is optional)
     apt:
